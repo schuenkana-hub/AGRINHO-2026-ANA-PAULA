@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Flutuante de Acessibilidade -->
+    <div class="acessibilidade-menu" role="complementary" aria-label="Opções de Acessibilidade">
+        <button id="btn-aumentar-fonte" title="Aumentar Fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-diminuir-fonte" title="Diminuir Fonte" aria-label="Diminuir tamanho do texto">A-</button>
+        <button id="btn-alternar-tema" title="Alternar Modo Escuro/Claro" aria-label="Alternar contraste de cores">
+            <svg class="icone-sol" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1s-1-.45-1-1V3c0-.55.45-1 1-1zm0 14c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55.45-1 1-1zM5.27 4.27c.39-.39 1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0L5.27 5.68c-.39-.39-.39-1.02 0-1.41zm10.64 10.64c.39-.39 1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41s-1.02.39-1.41 0l-1.41-1.41c-.39-.39-.39-1.02 0-1.41zM2 12c0-.55.45-1 1-1h2c0 .55-.45 1-1 1s-1-.45-1-1zm14 0c0-.55.45-1 1-1h2c0 .55-.45 1-1 1s-1-.45-1-1zM5.27 19.73c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.02.39-1.41 0zm10.64-10.64c-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.39.39-1.02.39-1.41 0z"/></svg>
+        </button>
+        <button id="btn-ouvir-texto" title="Ouvir Conteúdo" aria-label="Iniciar leitura por voz do conteúdo">Ouvir</button>
+        <button id="btn-parar-texto" title="Parar Leitura" aria-label="Parar leitura por voz">Parar</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-container">
+            <h1>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h1>
+            <p>O Agronegócio em Nova Tebas: Tradição, Sustentabilidade e Força Econômica</p>
+        </div>
+    </header>
+
+    <!-- Área Principal de Conteúdo -->
+    <main id="conteudo-principal" class="layout-principal">
+        
+        <!-- Coluna da Esquerda: Interatividades -->
+        <aside class="coluna-interativa" aria-label="Interações e Eventos">
+            <!-- Formulário de Inscrição -->
+            <section class="card-interativo card-formulario">
+                <h2>Conheça Nova Tebas</h2>
+                <p>Venha conhecer melhor Nova Tebas. Inscreva-se no nosso seminário on-line sobre o Agro sustentável em nosso município.</p>
+                <form id="form-seminario">
+                    <div class="campo-grupo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" required placeholder="Sua cidade">
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" required placeholder="Seu estado">
+                    </div>
+                    <div class="campo-grupo">
+                        <label for="pais">País</label>
+                        <input type="text" id="pais" required placeholder="Seu país">
+                    </div>
+                    <button type="submit" class="btn-moderno">Realizar Inscrição</button>
+                </form>
+                <div id="msg-sucesso-form" class="mensagem-sucesso" style="display: none;">Inscrição realizada com sucesso!</div>
+            </section>
+
+            <!-- Área de Comentários -->
+            <section class="card-interativo card-comentarios">
+                <h2>Espaço do Leitor</h2>
+                <p>Deixe suas dúvidas ou comentários sobre o desenvolvimento sustentável em nossa região.</p>
+                <form id="form-comentario">
+                    <div class="campo-grupo">
+                        <label for="comentario-texto">Seu comentário</label>
+                        <textarea id="comentario-texto" required rows="4" placeholder="Escreva aqui seu comentário..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-moderno">Enviar Comentário</button>
+                </form>
+                <div class="lista-comentarios" id="lista-comentarios">
+                    <!-- Comentários inseridos dinamicamente aparecerão aqui -->
+                </div>
+            </section>
+        </aside>
+
+        <!-- Coluna da Direita: Artigos e Textos -->
+        <section class="coluna-conteudo" aria-label="Conteúdo Informativo">
+            
+            <article class="bloco-texto">
+                <h2>Boas-vindas ao Coração Econômico</h2>
+                <p>Bem-vindo à página dedicada ao coração econômico de Nova Tebas! Nossa terra é reconhecida pela riqueza de seu solo, pelo clima propício e, acima de tudo, pela dedicação do produtor rural. Com uma forte base na agricultura familiar, o município une tradição e inovação para alimentar famílias e impulsionar o desenvolvimento de toda a região.</p>
+                <p>O agronegócio é a principal força econômica de Nova Tebas, município localizado na região Central do Paraná. O setor destaca-se pela forte presença da agricultura familiar, que compõe cerca de 85% das propriedades rurais locais, gerando renda direta, movimentando o comércio e promovendo o desenvolvimento sustentável.</p>
+            </article>
+
+            <!-- Imagem Placeholder 1 -->
+            <div class="imagem"> <img src="Foto1.png" alt="Produção agrícola sustentável integrada à natureza no município de Nova Tebas"> </div>
+
+            <article class="bloco-texto">
+                <h2>Pilares da Nossa Produção</h2>
+                <p>O ecossistema rural de Nova Tebas é diversificado e equilibrado, dividindo-se em importantes cadeias produtivas. Expanda as abas abaixo para conhecer os detalhes de cada setor:</p>
+                
+                <!-- Acordeão Interativo -->
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="acc-leite">
+                            <span>Bovinocultura de Leite</span>
+                            <span class="accordion-icone" aria-hidden="true">+</span>
+                        </button>
+                        <div id="acc-leite" class="accordion-body" hidden>
+                            <p>Um dos maiores motores da economia familiar novatebense. Programas municipais de incentivo, como o Pró Leite, promovem o melhoramento genético e a assistência técnica, garantindo alta produtividade e qualidade do leite entregue aos laticínios da região.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="acc-graos">
+                            <span>Agricultura de Grãos</span>
+                            <span class="accordion-icone" aria-hidden="true">+</span>
+                        </button>
+                        <div id="acc-graos" class="accordion-body" hidden>
+                            <p>Grandes e médias extensões de terra dedicadas ao cultivo de culturas fortes no estado, como a soja e o milho, que abastecem o mercado nacional e as cooperativas parceiras.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="acc-corte">
+                            <span>Pecuária de Corte</span>
+                            <span class="accordion-icone" aria-hidden="true">+</span>
+                        </button>
+                        <div id="acc-corte" class="accordion-body" hidden>
+                            <p>Manejo estratégico de rebanhos bovinos, gerando carne de excelente qualidade por meio de pastagens bem aproveitadas.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="acc-frutas">
+                            <span>Fruticultura e Olericultura Orgânica</span>
+                            <span class="accordion-icone" aria-hidden="true">+</span>
+                        </button>
+                        <div id="acc-frutas" class="accordion-body" hidden>
+                            <p>Nova Tebas ganhou destaque regional com a agroindustrialização de frutas e polpas orgânicas, liderada por cooperativas locais (como a Cooperatvama no distrito de Poema). O modelo associa tecnologia sustentável, como o uso de energia solar e captação de água da chuva, gerando alto valor agregado.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="acc-agroindustria">
+                            <span>Pequenas Agroindústrias</span>
+                            <span class="accordion-icone" aria-hidden="true">+</span>
+                        </button>
